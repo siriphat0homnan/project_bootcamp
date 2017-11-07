@@ -6,8 +6,9 @@
 
     <style>
     #bodybg {
-      background-color: #6600ff;
+      background-color: #ccccff;
     }
+    #button_first {padding: 150px 16px;}
     </style>
 
     <!-- Required meta tags -->
@@ -21,14 +22,25 @@
     <div class="container" >
 
         <!-- ======================== -->
+        <div class="row pt-5"></div>
+        <div class="row pt-5"></div>
+        <div class="row pt-5"></div>
         <div class="row">
           <div class="col"></div>
-          <div class="col-md-10 pt-5 pb-5" >
+          <div class="col-md-6 pt-5 pb-5" >
 
             <center>
-            <a href="/users"><button type="button" class="btn btn-primary btn-lg btn-block">Student</button></a>
-            <a href="/"><button type="button" class="btn btn-default btn-lg btn-block">Staff</button></a>
-
+            <div class="pb-5">
+              <h1 style="color: #6600ff;">Chiang Mai University</h1>
+            </div>
+            <div class="row">
+              <div class="col"> 
+                <a href="/users"><button id="button_first" type="button" class="btn btn-primary btn-lg btn-block">Student</button></a>
+              </div>
+              <div class="col">
+                <a href="/"><button id="button_first" type="button" class="btn btn-default btn-lg btn-block">Staff</button></a>
+              </div>
+            </div> 
             </center>
 
           </div>

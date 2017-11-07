@@ -4,11 +4,11 @@
 
     <title>For Disabled</title>
 
-<!--     <style>
+    <style>
     #bodybg {
-      background-color: #6600ff;
+      background: #ccccff;
     }
-    </style> -->
+    </style>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -17,20 +17,27 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   </head>
-  <body >
-    <div class="container" >
+  <body id="bodybg">
+    <div class="container">
 
         <!-- ======================== -->
+        <div class="row pt-5"></div>
+        <div class="row pt-5"></div>
+        <div class="row pt-5"></div>
+        <div class="row pt-5"></div>
         <div class="row">
           <div class="col"></div>
-          <div class="col-md-10 pt-5 pb-5" >
+          <div class="col-md-8 pt-5">
 
             <center>
-            <form class="pt-5 col-8 pb-2" method='post', action='start'>
+            <div >
+              <h1> Student ID</h1>
+            </div>
+            <form class=" col-md-6" method='post', action='start'>
               <div class="pt-5 pb-5">
-                <input type="text" class="form-control" name="name" placeholder="Student ID">
+                <input type="text" class="form-control" name="id_student" placeholder="Student ID">
               </div>
-              <div class="pt-5">
+              <div>
                 <button type="submit" class="btn btn-primary btn-lg btn-block">NEXT</button>
               </div>
             </form>
@@ -40,6 +47,8 @@
           <div class="col"></div>
         </div>
     </div>
+
+
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
