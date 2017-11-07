@@ -9,6 +9,7 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 var dest = require('./routes/dest');
 var start = require('./routes/start');
+var student_status = require('./routes/student_status');
 
 var app = express();
 
@@ -28,6 +29,8 @@ app.use('/', index);
 app.use('/', dest);
 app.use('/', users);
 app.use('/', start);
+app.use('/', student_status);
+app.use('/student_status', student_status);
 app.use('/start', start);
 app.use('/destination', dest);
 app.use('/users', users);

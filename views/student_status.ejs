@@ -6,8 +6,10 @@
 
     <style>
     #bodybg {
-      background: #ccccff;
+      background-color: #ccccff;
     }
+    #button_status1 {padding: 150px 16px;}
+    #button_status2 {padding: 50px 16px;}
     </style>
 
     <!-- Required meta tags -->
@@ -21,37 +23,56 @@
     <div class="container">
 
         <!-- ======================== -->
-        <div class="row pt-5"></div>
-        <div class="row pt-5"></div>
         <div class="row">
           <div class="col"></div>
-          <div class="col-md-8 pt-5">
+          <div class="col-md-10 pt-5 pb-5" >
 
             <center>
-            <div >
-              <h1> Student ID</h1>
-            </div>
-            <form class="col-md-6 pb-2" method='post', action='start'>
-              <div class="pt-5 pb-5">
-                <input type="text" class="form-control" name="id_student" placeholder="Student ID">
+            <h1 class="pb-5 pt-5" style="color: #6600ff";>รายการ</h1></center>
+
+            <div class="row pt-5">
+              <!-- <div class="col-md-8"> -->
+                <table class="col table">
+                  <thead class="thred-inverse">
+                    <tr>
+                      <th>#</>
+                      <th>Start</th>
+                      <th>Destination</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                    <tr>
+                      <th>1</td>
+                      <td>อ่างแก้ว</td>
+                      <td>ห้องสมุดกลาง</td>
+                      <td>รอ</td>
+                    </tr>
+                  <tbody>
+                  </tbody>
+                </table>
+              <!-- </div> -->
+
+              <div class="col-4">
+                <div class="col">
+                  <a href="/users"><button id="button_status1" type="button" class="btn btn-primary btn-lg btn-block">Call bus</button></a>
+                </div>
+                <div class="col">
+                  <a href="/"><button 
+                   id="button_status2" class="btn btn-default btn-lg btn-block">CANCEL</button></a>
+                </div>
               </div>
-              <div>
-                <button type="submit" class="btn btn-primary btn-lg btn-block">NEXT</button>
-              </div>
-            </form>
-            <div class="col-md-6">
-              <a href="/student_status"><button class="btn btn-primary btn-lg btn-block">CANCEL</button></a>
             </div>
-            </center>
+
+            
 
           </div>
           <div class="col"></div>
         </div>
+
         <div class="row pt-5"></div>
         <div class="row pt-5"></div>
+
     </div>
-
-
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
